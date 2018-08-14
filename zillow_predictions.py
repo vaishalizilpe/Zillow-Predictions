@@ -11,8 +11,8 @@ from matplotlib import pyplot
 from statsmodels.tsa.arima_model import ARIMA
 from sklearn.metrics import mean_squared_error
 
-air=pd.read_csv("C:\Users\RAHUL\Desktop\AirBnb-CapOne\listings.csv",low_memory=False)
-zil=pd.read_csv("C:\Users\RAHUL\Desktop\AirBnb-CapOne\Zip_Zhvi_2bedroom.csv")
+air=pd.read_csv("C:\Users\vaishali\Desktop\AirBnb-CapOne\listings.csv",low_memory=False)
+zil=pd.read_csv("C:\Users\vaishali\Desktop\AirBnb-CapOne\Zip_Zhvi_2bedroom.csv")
 
 zil_subset=zil[zil.City=='New York']
 zil_subset=zil_subset.drop(['RegionID','City','State','Metro','CountyName','SizeRank'],axis=1)
